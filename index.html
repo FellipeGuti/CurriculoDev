@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+
+    <script src="https://kit.fontawesome.com/0c60985820.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 15px 15px;
+            font-family: sans-serif;
+        }
+
+        @media (max-width:490px) {
+            * {
+                margin: 10px 10px;
+                font-family: sans-serif;
+            }
+
+            #nameAndTitle {
+                /*Centralizando uma div em cima da outra*/
+                background-color: white;
+                width: 350px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            #nameAndTitle h1,
+            h2 {
+                /*Tirando as margens do redor dos H´s*/
+                margin: 0;
+                padding: 0;
+            }
+
+            h2 {
+                color: rgb(0, 0, 0, 0.317);
+
+            }
+
+            #container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #project {
+                margin: 0;
+                margin-left: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            #project li {
+                text-align: center;
+            }
+
+        }
+
+        @media (min-width:500px) {
+
+            #header {
+                background-color: rgb(228, 205, 176);
+                margin-top: 50px;
+                margin-bottom: 50px;
+                /*Margem de baixo para cima*/
+            }
+
+            #nameAndTitle {
+                width: 450px;
+            }
+
+            #project {
+                margin: 0;
+                margin-left: 15px auto;
+                padding: 0;
+            }
+
+            #project img {
+
+                width: 250px;
+                height: 190px;
+                border-radius: 50px;
+            }
+
+            #project li {
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 751px) {
+
+            #header {
+                background-color: rgb(228, 205, 176);
+                margin-top: 50px;
+                margin-bottom: 50px;
+                /*Margem de baixo para cima*/
+            }
+
+            #nameAndTitle {
+                /*Centralizando uma div em cima da outra*/
+                background-color: white;
+                width: 450px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            #container {
+                display: grid;
+                grid-template-columns: 40% auto;
+                grid-column-gap: 20px;
+            }
+
+            #academic ul {
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+
+        @media (min-width: 1200px) {
+            #project {
+                display: flex;
+                margin: 0;
+                margin-left: 15px;
+                padding: 0;
+            }
+        }
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        /*#header {
+            background-color: rgb(228, 205, 176);
+            margin-top: 50px;
+            margin-bottom: 50px;
+            /*Margem de baixo para cima
+            }*/
+
+        #nameAndTitle {
+            /*Centralizando uma div em cima da outra*/
+            background-color: white;
+            /*width: 450px;*/
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #nameAndTitle h1,
+        h2 {
+            /*Tirando as margens do redor dos H´s*/
+            margin: 0;
+        }
+
+        #contact {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            /*Tirar as bolinhas da lista*/
+        }
+
+        #contact i {
+
+            width: 30px;
+            color: rgb(228, 205, 176);
+        }
+
+        /*#container {
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-column-gap: 20px;
+        }*/
+
+        #sidebar,
+        #content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #academic ul li {
+            color: rgba(0, 0, 0, 0.317);
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            list-style-type: none;
+        }
+
+        hr {
+            border-color: rgba(0, 0, 0, 0.317);
+        }
+
+        #data {
+            color: rgba(0, 0, 0, 0.317);
+        }
+
+        .card {
+            margin: 0;
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 15px;
+            background: rgba(207, 205, 205, 0.354);
+        }
+
+        .card li a {
+            color: blue;
+        }
+
+        #project {
+            /*display: flex;*/
+            margin: 0;
+            margin-left: 15px;
+            padding: 0;
+        }
+
+        #project img {
+            width: 250px;
+            height: 190px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="nameAndTitle">
+            <h1>Fellipe Gutierrez Vicente</h1>
+            <h2>Desenvolvedor Font-End Web</h2>
+        </div>
+    </div>
+    <div id="container">
+        <div id="sidebar">
+            <div class="card">
+                <h3>Contato</h3>
+                <HR>
+                </HR>
+                <ul id="contact">
+                    <li><i class="fa-solid fa-envelope"></i> fellipegutierrez16@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 22 99791-7296</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Araruama - RJ</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Skills</h3>
+                <HR>
+                </HR>
+                <ul>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>React</li>
+                    <li>Git/GitHub</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Formação Acadêmica</h3>
+                <HR>
+                </HR>
+                <ul id="academic">
+                    <li>Analista e Desenvolvedor de Sistemas<ul>
+                            <li>Universidade Estácio de Sá 2020 - 2022</li>
+                        </ul>
+                    </li>
+                    <li>Técnico em Administração<ul>
+                            <li>Escola Técnica Status 2019 - 2021</li>
+                        </ul>
+                    </li>
+                    <li>Curso de LGPD
+                        <ul>
+                            <li>SERPRO - Serviço Federal de Processsasmento de Dados, Fev 2024 - Mar 2024; </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Links</h3>
+                <HR>
+                </HR>
+                <ul>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/fellipe-gutierrez-ba049b2b6">Linkedin</a>
+                    </li>
+                    <li><a target="_blank" href="https://github.com/FellipeGuti?tab=repositories">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div class="card">
+                <h3 id="sobre">Sobre Mim</h3>
+                <HR>
+                </HR>
+                <P>
+                    Sou um Desenvolvedor fascinado pelo mundo da programação, suas possibilidades de resoluções de
+                    problemas e importância no mundo de hoje são os motivos por eu querer atuar e sempre aprender mais
+                    sobre esse ramo.
+                    Estou programando como front-end a mais de 1 anos e desejo fazer isso como profissão.
+                </P>
+            </div>
+            <div class="card">
+                <h3>EXPERIÊCIAS PROFISSIONAIS</h3>
+                <HR>
+                </HR>
+                <P>
+                    <strong>Serviço Militar - Marinha do Brasil, Base Aerea e Naval de São Pedro da Aldeia </strong>
+                </P>
+                <p id="data"><b>Março 2020 - Março 2024</b></p>
+                <ul>
+
+                    <li>Experiência na criação, atualização e execução de Procedimentos de carater administrativo; </li>
+                    <li>Experiência com atendimento ao público</li>
+                    <li>Instrutor e líder de equipe em tarefas internas </li>
+                </ul>
+
+            </div>
+            <div class="card">
+                <h3>PROJETOS PESSOAIS</h3>
+                <HR>
+                </HR>
+
+                <p id="data"><b>Janeiro 2020 - Dezembro 2023</b></p>
+                <P>
+                    <strong>Gerador de Senhas Fortes (HTML, CSS e JS) </strong>
+                </P>
+                <ul>
+                    <li>Aplicação Web que visa gerar senhas fortes e aleatórias, com diversos caracteres a que torna
+                        mais dificil de ser hackeada;</li>
+                </ul>
+                <P>
+                    <strong>Calculadora Web (HTML, CSS e JS) </strong>
+                </P>
+                <ul>
+                    <li>Aplicação que utiliza operações básicas da matemática, feita com intuito de exercitar o
+                        conhecimento em Desenvolvimento WEB;</li>
+                </ul>
+
+            </div>
+            <div class="card">
+                <h3>PROJETOS</h3>
+                <HR>
+                </HR>
+                <ul id="project">
+                    <li> <img src="gera.png" alt="Imagem do site Gerador de Senha"></li>
+                    <li> <img src="calc.png" alt="Imagem do site Calculadora WEB"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
